@@ -8,8 +8,8 @@
     "test-user": "cross-env NODE_ENV=test PORT=5000 jest tests/user.test.js --verbose  --coverage",
     "test-coin": "cross-env NODE_ENV=test PORT=5000 jest tests/coins.test.js --verbose --silent --coverage ",
     "test-login": "cross-env NODE_ENV=test PORT=5000 jest tests/login.test.js --verbose --silent",
-    "testLogger" :"cross-env NODE_ENV=test PORT=5000 jest tests/user.test.js --verbose --detectOpenHandles ",
-    "test:watch":"cross-env npm run testLogger -- --watch",
+    "testLogger": "cross-env NODE_ENV=test PORT=5000 jest tests/user.test.js --verbose --detectOpenHandles ",
+    "test:watch": "cross-env npm run testLogger -- --watch",
     "test": "cross-env NODE_ENV=test PORT=1234 jest --verbose --silent --maxWorkers=1 --coverage"
   },
   "author": "Franco Miño",
