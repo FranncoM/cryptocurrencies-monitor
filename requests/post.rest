@@ -1,0 +1,28 @@
+### Crear usuario
+POST http://localhost:2500/api/v1/user
+Content-Type: application/json
+
+{
+  "userName": "noobmaster",
+  "name": "Juan",
+  "lastName": "Perez",
+  "password": "soyunapassword",
+  "currency": "usd",
+  "topCoins": ["6151254e452cb62809b5fdcb","6151254e452cb62809b5fee4"]
+}
+### agregar moneda
+PUT http://localhost:2500/api/v1/user/addCoins
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTUyYzFjM2EwYmI1YWQzNWY5ZmMxMCIsInVzZXJuYW1lIjoibm9vYm1hc3RlciIsImN1cnJlbmN5IjoidXNkIiwiaWF0IjoxNjMzMDc4MDYzLCJleHAiOjE2MzM2ODI4NjN9.d2HBNLwl0yIa6lM2iim2Xm6yDjVJ1Y6jL5VgFhnW9WA
+
+{
+  "newCoins": ["binancecoin","ethereum","ion","bitcoin","cosmos"]
+}
+### login
+POST http://localhost:2500/api/v1/login
+Content-Type: application/json
+
+{
+  "username": "noobmaster",
+  "password": "soyunapassword"
+}

@@ -1,0 +1,27 @@
+###Llamada user
+GET http://localhost:2500/api/v1/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTUyYzFjM2EwYmI1YWQzNWY5ZmMxMCIsInVzZXJuYW1lIjoibm9vYm1hc3RlciIsImN1cnJlbmN5IjoidXNkIiwiaWF0IjoxNjMzMDc4MDYzLCJleHAiOjE2MzM2ODI4NjN9.d2HBNLwl0yIa6lM2iim2Xm6yDjVJ1Y6jL5VgFhnW9WA
+
+###Llama top N de monedas de un usuario
+GET http://localhost:2500/api/v1/user/topCoins
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTUyYzFjM2EwYmI1YWQzNWY5ZmMxMCIsInVzZXJuYW1lIjoibm9vYm1hc3RlciIsImN1cnJlbmN5IjoidXNkIiwiaWF0IjoxNjMzMDc4MDYzLCJleHAiOjE2MzM2ODI4NjN9.d2HBNLwl0yIa6lM2iim2Xm6yDjVJ1Y6jL5VgFhnW9WA
+
+{
+    "currencySort":"asc"
+}
+
+### Llamada a una moneda
+GET http://localhost:2500/api/v1/coins/bitcoin
+
+
+### Llamada a todas las monedas
+GET http://localhost:2500/api/v1/coins/all
+Content-Type: application/json
+
+{
+    "page":0, 
+    "currencySort":"asc",
+    "currency":"ars"
+}
